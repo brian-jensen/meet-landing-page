@@ -16,6 +16,7 @@
 - HTML
 - CSS
 - Flexbox
+- Grid
 - Mobile-first workflow
 
 ## Useful resources
