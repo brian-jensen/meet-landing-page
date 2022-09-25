@@ -262,3 +262,78 @@ footer img {
 .footer-text a.download-btn:hover {
   background-color: hsl(267.8, 54.7%, 70.6%);
 }
+
+@media (min-width: 768px) {
+  .hero-text,
+  .hero-btns {
+    margin: 72px auto 0 auto;
+    max-width: 457px;
+  }
+
+  .hero-text h1 {
+    padding: 0 55px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .hero-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .hero-btns > a {
+    margin: 0;
+  }
+  
+  a.info-btn {
+    margin-left: 16px;
+  }
+
+  .divider {
+    margin-top: 80px;
+  }
+
+  .pictures {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-template-rows: 1;
+    justify-content: center;
+    column-gap: 11px;
+    margin-bottom: 32px;
+  }
+
+  .pictures img {
+    width: 164px;
+    height: 156px;
+  }
+
+  .modern-use {
+    width: 573px;
+    margin: 0 auto;
+  }
+
+  .modern-use h2 {
+    width: 445px;
+    margin: 24px auto 32px auto;
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .footer-text {
+    padding: 92px 98px 0 98px;
+  }
+
+  .footer-text h2 {
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 32px;
+    padding: 0 98px;
+  }
+
+  .footer-text p {
+    margin-bottom: 40px;
+  }
+
+}
