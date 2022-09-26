@@ -48,6 +48,11 @@ body {
   max-width: calc(100% + 40px);
 }
 
+.hero-image-left,
+.hero-image-right {
+  display: none;
+}
+
 header {
   text-align: center;
   padding: 48px 24px 0 24px;
@@ -56,8 +61,8 @@ header {
 
 header a {
   display: inline-block;
-  width: 119px;
-  height: 28px;
+  width: 7.4375rem;
+  height: 1.75rem;
 }
 
 main {
@@ -70,16 +75,16 @@ main {
   margin-top: 0;
   margin-bottom: 24px;
   padding: 0 20px;
-  font-size: 40px;
-  line-height: 44px;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
   color: hsl(240, 20.8%, 19.8%);
 }
 
 .hero-text p {
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   color: hsl(240, 10.1%, 57.3%);
 }
 
@@ -88,15 +93,15 @@ a {
   justify-content: center;
   align-items: center;
   font-weight: 900;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   border-radius: 29px;
   margin: 0 auto;
 }
 
 a.download-btn {
-  width: 193px;
-  height: 58px;
+  width: 12.0625rem;
+  height: 3.625rem;
   margin-bottom: 16px;
   color: hsl(0, 0%, 100%);
   background: hsl(192.4, 37.4%, 48.2%);
@@ -111,8 +116,8 @@ a.download-btn span {
 }
 
 a.info-btn {
-  width: 139px;
-  height: 58px;
+  width: 8.6875rem;
+  height: 3.625rem;
   color: hsl(0, 0%, 100%);
   background: hsl(267.8, 34.5%, 53.3%);
   border-radius: 29px;
@@ -123,14 +128,14 @@ a.info-btn:hover {
 }
 
 .divider {
-  width: 56px;
-  height: 140px;
+  width: 3.5rem;
+  height: 8.75rem;
   margin: 64px auto;
 }
 
 .line {
-  width: 1px;
-  height: 84px;
+  width: 0.0625rem;
+  height: 5.25rem;
   margin: 0 auto;
   background-color: hsla(240, 10.1%, 57.3%, 0.25);
 }
@@ -139,16 +144,16 @@ a.info-btn:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 56px;
-  height: 56px;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   border: 1px solid hsla(240, 10.1%, 57.3%, 0.25);
 }
 
 .circle p {
   font-weight: 900;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   color: hsl(240, 10.1%, 57.3%);
 }
 
@@ -170,8 +175,8 @@ a.info-btn:hover {
 
 .modern-use .cyan-text {
   font-weight: 900;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: hsl(192.4, 37.4%, 48.2%);
@@ -179,8 +184,8 @@ a.info-btn:hover {
 
 .modern-use h2 {
   font-weight: 900;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 2rem;
+  line-height: 2.25rem;
   margin-top: 24px;
   margin-bottom: 32px;
   color: hsl(240, 20.8%, 19.8%);
@@ -188,8 +193,8 @@ a.info-btn:hover {
 
 .modern-use p:last-child {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   margin-bottom: 32px;
   color: hsl(240, 10.1%, 57.3%);
 }
@@ -218,6 +223,10 @@ footer img {
   opacity: 0.25;
 }
 
+footer img.footer-image-desktop {
+  display: none;
+}
+
 .overlay {
   background: hsl(192.1, 37.2%, 53.1%);
   mix-blend-mode: multiply;
@@ -240,15 +249,15 @@ footer img {
 
 .footer-text h2 {
   margin-bottom: 24px;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 2rem;
+  line-height: 2.25rem;
 }
 
 .footer-text p {
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
 }
 
 .footer-text a.download-btn {
@@ -263,17 +272,22 @@ footer img {
   background-color: hsl(267.8, 54.7%, 70.6%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
+  .wrapper {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+
   .hero-text,
   .hero-btns {
     margin: 72px auto 0 auto;
-    max-width: 457px;
+    max-width: 28.5625rem;
   }
 
   .hero-text h1 {
     padding: 0 55px;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 
   .hero-btns {
@@ -283,10 +297,10 @@ footer img {
     margin-top: 0;
   }
 
-  .hero-btns > a {
+  .hero-btns>a {
     margin: 0;
   }
-  
+
   a.info-btn {
     margin-left: 16px;
   }
@@ -298,7 +312,6 @@ footer img {
   .pictures {
     display: grid;
     grid-template-columns: repeat(4, max-content);
-    grid-template-rows: 1;
     justify-content: center;
     column-gap: 11px;
     margin-bottom: 32px;
@@ -315,10 +328,10 @@ footer img {
   }
 
   .modern-use h2 {
-    width: 445px;
+    width: 27.8125rem;
     margin: 24px auto 32px auto;
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
   }
 
   .footer-text {
@@ -326,14 +339,123 @@ footer img {
   }
 
   .footer-text h2 {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
     margin-bottom: 32px;
     padding: 0 98px;
   }
 
   .footer-text p {
     margin-bottom: 40px;
+  }
+
+}
+
+@media (min-width: 90em) {
+  .wrapper {
+    max-width: 90rem;
+  }
+
+  header {
+    padding-top: 80px;
+  }
+
+  .desktop-hero {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-image-full {
+    display: none;
+  }
+
+  .hero-image-left,
+  .hero-image-right {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    height: 305px;
+  }
+
+  .hero-image-left {
+    left: -55px;
+  }
+
+  .hero-image-right {
+    top: 54px;
+    right: -55px;
+  }
+
+  .hero-text {
+    margin: 0;
+    margin-top: 54px;
+    max-width: 32.8125rem;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 34px;
+  }
+
+  .hero-text p {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+
+  .divider {
+    margin-top: 110px;
+  }
+
+  .divider:last-of-type {
+    margin-top: 72px;
+  }
+
+  .pictures {
+    column-gap: 30px;
+    margin-bottom: 80px;
+  }
+
+  .pictures img {
+    height: 242px;
+    width: 255px;
+  }
+
+  .modern-use h2 {
+    margin-top: 16px;
+  }
+
+  .modern-use p:last-child {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    padding: 0 30px;
+  }
+
+  footer img.footer-image-tablet {
+    display: none;
+  }
+
+  footer img.footer-image-desktop {
+    display: inline-block;
+    height: 308px;
+  }
+
+  .footer-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 0 165px;
+  }
+
+  footer .footer-text>* {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-text h2,
+  .footer-text p {
+    flex-basis: 21.875rem;
   }
 
 }
