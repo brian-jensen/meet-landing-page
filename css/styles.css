@@ -107,10 +107,6 @@ a.download-btn {
   background: hsl(192.4, 37.4%, 48.2%);
 }
 
-a.download-btn:hover {
-  background: hsl(192.1, 53.5%, 63.7%);
-}
-
 a.download-btn span {
   color: hsl(192.5, 89.8%, 76.9%);
 }
@@ -121,10 +117,6 @@ a.info-btn {
   color: hsl(0, 0%, 100%);
   background: hsl(267.8, 34.5%, 53.3%);
   border-radius: 29px;
-}
-
-a.info-btn:hover {
-  background: hsl(267.8, 54.7%, 70.6%);
 }
 
 .divider {
@@ -266,10 +258,6 @@ footer img.footer-image-desktop {
 
 .footer-text a.download-btn span {
   color: hsl(267.9, 100%, 86.1%);
-}
-
-.footer-text a.download-btn:hover {
-  background-color: hsl(267.8, 54.7%, 70.6%);
 }
 
 @media (min-width: 48em) {
@@ -458,4 +446,18 @@ footer img.footer-image-desktop {
     flex-basis: 21.875rem;
   }
 
+}
+
+@media (hover: hover) {
+  a.download-btn:hover {
+    background: hsl(192.1, 53.5%, 63.7%);
+  }
+
+  a.info-btn:hover {
+    background: hsl(267.8, 54.7%, 70.6%);
+  }
+
+  .footer-text a.download-btn:hover {
+    background-color: hsl(267.8, 54.7%, 70.6%);
+  }
 }
